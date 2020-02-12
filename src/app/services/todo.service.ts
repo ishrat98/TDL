@@ -44,7 +44,8 @@ export class TodoService {
 
   private setlocalstorageTodos(todos: Todo[]): void {
 
-    localStorage.setItem('todos', JSON.stringify({ todos }));
+    // tslint:disable-next-line: object-literal-shorthand
+    localStorage.setItem('todos', JSON.stringify({ todos: todos }));
   }
 
 }
